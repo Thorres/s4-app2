@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity circuit_tr_signal
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity module_sig
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity affhexPmodSSD_v3
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity codeur_i2s_vsb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decodeur_i2s_v1b
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mef_decod_i2s_v1b
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_dec_24b_fd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_dec_24b
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mef_cod_i2s_vsb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity compteur_nbits
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg_24b
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.srcs/sim_1/new/simul_module_sig_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simul_module_sig_tb
