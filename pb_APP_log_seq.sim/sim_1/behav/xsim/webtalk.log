@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Webtalk v2018.2.2 (64-bit)
-# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
-# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Thu May 16 17:17:12 2019
-# Process ID: 7340
-# Current directory: C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/simul_module_sig_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim\webtalk.jou
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 24 12:07:33 2020
+# Process ID: 12080
+# Current directory: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/circuit_tr_signal_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/simul_module_sig_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/ProjetsFPGA/projets_vivado/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/simul_module_sig_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May 16 17:17:15 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Thu May 16 17:17:15 2019...
+source C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/circuit_tr_signal_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/circuit_tr_signal_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jan 24 12:07:36 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 24 12:07:36 2020...

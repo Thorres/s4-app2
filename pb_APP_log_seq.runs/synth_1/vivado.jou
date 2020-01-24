@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan 22 14:54:12 2020
-# Process ID: 15616
+# Start of session at: Fri Jan 24 12:10:49 2020
+# Process ID: 9072
 # Current directory: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1
 # Command line: vivado.exe -log circuit_tr_signal.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit_tr_signal.tcl
 # Log file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1/circuit_tr_signal.vds

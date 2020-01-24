@@ -33,12 +33,19 @@ generic (nbtn : integer := nbtn;  mode_simul: std_logic := '0');
          );
 end component;
 
+component MEF_btn is
+    Port ( i_clk : in STD_LOGIC;
+           i_reset : in STD_LOGIC;
+           i_str_btn : in STD_LOGIC_VECTOR (3 downto 0);
+           o_selection : out STD_LOGIC_VECTOR (1 downto 0));
+end component;
 
     type fsm_etat_aff IS (S1,S2,S3,S4);
     SIGNAL fsm_aff, fsm_aff_suiv : fsm_etat_aff;
     signal d_strobe_btn :    std_logic_vector (nbtn-1 downto 0);
     signal d_btn_cd     :    std_logic_vector (nbtn-1 downto 0); 
     signal d_reset      :    std_logic;
+    signal d_sel_par    :    std_logic_vector (1 downto 0);
    
 BEGIN 
 
@@ -51,9 +58,16 @@ BEGIN
         o_btn_db      => d_btn_cd,
         o_strobe_btn  => d_strobe_btn  
          );
- 
+         
+ inst_MEF_btn: MEF_btn
+    port map(
+        i_clk => CLK,
+        i_reset => d_reset,
+        i_str_btn => d_strobe_btn,
+        o_selection => d_sel_par
+    );
    o_btn_cd        <= d_btn_cd;
-   o_selection_par <= i_sw(1 downto 0); -- mode de selection du parametre par sw
+   o_selection_par <= d_sel_par;-- mode de selection du parametre par sw
    o_selection_fct <= i_sw(3 downto 2); -- mode de selection de la fonction par sw
    d_reset         <= i_btn(3);         -- pas de contionnement particulier sur reset
    o_reset         <= d_reset;          -- pas de contionnement particulier sur reset
