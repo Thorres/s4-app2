@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579722848">
+  <File Type="PA-TCL" Name="circuit_tr_signal.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="circuit_tr_signal_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="circuit_tr_signal_reports.tcl"/>
+  <File Type="RDS-RDS" Name="circuit_tr_signal.vds"/>
+  <File Type="RDS-UTIL" Name="circuit_tr_signal_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="circuit_tr_signal_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="circuit_tr_signal.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="circuit_tr_signal_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="circuit_tr_signal_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/attenateur_pwm.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd"/>
+        <Attr Name="ImportTime" Val="1548087060"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calcul_param_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd"/>
+        <Attr Name="ImportTime" Val="1549135550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calcul_param_2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd"/>
+        <Attr Name="ImportTime" Val="1549135596"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calcul_param_3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd"/>
+        <Attr Name="ImportTime" Val="1549135622"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/circuit_tr_signal.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd"/>
+        <Attr Name="ImportTime" Val="1549202425"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd"/>
+        <Attr Name="ImportTime" Val="1549207162"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gen_clk_codec.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd"/>
+        <Attr Name="ImportTime" Val="1548453118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2c_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd"/>
+        <Attr Name="ImportTime" Val="1546530318"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/init_codec_v2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd"/>
+        <Attr Name="ImportTime" Val="1550690022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/module_sig.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd"/>
+        <Attr Name="ImportTime" Val="1549202913"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sig_fct_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd"/>
+        <Attr Name="ImportTime" Val="1549206874"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sig_fct_2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd"/>
+        <Attr Name="ImportTime" Val="1549135626"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sig_fct_3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd"/>
+        <Attr Name="ImportTime" Val="1549135628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/strb_gen_v3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd"/>
+        <Attr Name="ImportTime" Val="1549202673"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/synchro_codec_v1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd"/>
+        <Attr Name="ImportTime" Val="1549145034"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/affhex_pmodssd_v3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd"/>
+        <Attr Name="ImportTime" Val="1558038303"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/conditionne_btn_v7.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd"/>
+        <Attr Name="ImportTime" Val="1578663692"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/module_commande.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd"/>
+        <Attr Name="ImportTime" Val="1579202479"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/codeur_i2s_vsb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd"/>
+        <Attr Name="ImportTime" Val="1558534596"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decodeur_i2s_v1b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd"/>
+        <Attr Name="ImportTime" Val="1579201955"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mef_decod_i2s_v1b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd"/>
+        <Attr Name="ImportTime" Val="1579201952"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_dec_24b_fd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd"/>
+        <Attr Name="ImportTime" Val="1558039469"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_dec_24b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd"/>
+        <Attr Name="ImportTime" Val="1568140532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mef_cod_i2s_vsb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd"/>
+        <Attr Name="ImportTime" Val="1579202118"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/compteur_nbits.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd"/>
+        <Attr Name="ImportTime" Val="1557867550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_24b.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd"/>
+        <Attr Name="ImportTime" Val="1557862922"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/synchro_zybo_v1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd"/>
+        <Attr Name="ImportTime" Val="1576011915"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="circuit_tr_signal"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/circuit_tr_signal.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc"/>
+        <Attr Name="ImportTime" Val="1549142424"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/circuit_tr_signal_test.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal_test.xdc"/>
+        <Attr Name="ImportTime" Val="1555424706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

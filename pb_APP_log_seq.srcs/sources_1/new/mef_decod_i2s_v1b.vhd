@@ -57,7 +57,8 @@ architecture Behavioral of mef_decod_i2s_v1b is
          sta_registre,
          sta_load_left,
          sta_load_right,
-         sta_wait,
+         sta_wait_left,
+         sta_wait_right,
          sta_str_data
          );
    signal fsm_EtatCourant, fsm_prochainEtat : fsm_cI2S_etats;
@@ -92,18 +93,22 @@ begin
                 fsm_prochainEtat <= sta_registre;
             end if;
          when sta_load_left =>
-            fsm_prochainEtat <= sta_wait;
+            fsm_prochainEtat <= sta_wait_left;
          when sta_load_right =>
             fsm_prochainEtat <= sta_str_data;
          when sta_str_data => 
-            fsm_prochainEtat <= sta_wait;
-         when sta_wait =>
-            if(falling_edge(i_lrc)) then
-                fsm_prochainEtat <= sta_init;
-            elsif(rising_edge(i_lrc)) then
+            fsm_prochainEtat <= sta_wait_right;
+         when sta_wait_left =>
+            if i_lrc = '1' then
                 fsm_prochainEtat <= sta_init;
             else
-                fsm_prochainEtat <= sta_wait;
+                fsm_prochainEtat <= sta_wait_left;
+            end if;
+         when sta_wait_right =>
+            if i_lrc = '0' then
+                fsm_prochainEtat <= sta_init;
+            else
+                fsm_prochainEtat <= sta_wait_right;
             end if;
      end case;
   end process;
@@ -144,7 +149,13 @@ begin
             o_load_left      <= '0';
             o_load_right     <= '0';
             o_str_dat <= '1';
-        when sta_wait =>
+        when sta_wait_left =>
+            o_cpt_bit_reset    <= '0';
+            o_bit_enable     <= '0';
+            o_load_left      <= '0';
+            o_load_right     <= '0';
+            o_str_dat <= '0';
+        when sta_wait_right =>
             o_cpt_bit_reset    <= '0';
             o_bit_enable     <= '0';
             o_load_left      <= '0';
