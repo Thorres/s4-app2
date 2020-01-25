@@ -93,7 +93,7 @@ begin
         case fsm_EtatCourant is
             when sta_init => o_authorize <= '0';
             when sta_2 => o_authorize <= '0';
-            when sta_3 => o_authorize <= '1';
+            when sta_3 => o_authorize <= '0';
         end case;
     end process;
 end Behavioral;

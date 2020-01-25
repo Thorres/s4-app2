@@ -65,11 +65,30 @@ tb: process
 begin
         d_reset <= '1';
         d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
+        d_ech <= "100000000000000000000001";
     wait for period; 
+        d_reset <= '1';
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
+    wait for period;
         d_reset <= '0';
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
         d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
     wait for period; 
         d_bclk <= '1';
         d_ech <= "000000000000000000000001";
@@ -88,7 +107,7 @@ begin
     wait for period; 
         d_bclk <= '0';
         d_ech <= "000000000000000000000001";
-    wait for period; 
+        wait for period; 
         d_bclk <= '1';
         d_ech <= "000000000000000000000001";
     wait for period; 
@@ -106,13 +125,6 @@ begin
     wait for period; 
         d_bclk <= '0';
         d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-        
     wait;
 end process;
 

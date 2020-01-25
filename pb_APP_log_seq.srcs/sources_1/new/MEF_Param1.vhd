@@ -87,32 +87,28 @@ begin
 -- conditions de transitions
 transitions: process(i_lrc , fsm_EtatCourant_param, local_authorization)
 begin
-    if(i_lrc = '0') then
+    if(i_lrc = '0') then                                -- a verifier
         case fsm_EtatCourant_param is
             when sta_output =>
-            if(local_authorization ='1') then
-                if(i_ech(23) = '0') then
-                    fsm_prochainEtat_param <= sta_MSB0; 
-                else
-                    fsm_prochainEtat_param <= sta_init;
-                end if;
+            if(i_ech(23) = '0') then
+                fsm_prochainEtat_param <= sta_MSB0; 
             else
                 fsm_prochainEtat_param <= sta_init;
             end if;
                 ------------------------------------------  
             when sta_MSB0 =>
             if(i_ech(23) = '0') then
-                    fsm_prochainEtat_param <= sta_MSB0; 
-                else
-                    fsm_prochainEtat_param <= sta_init;
-                end if;   
+                fsm_prochainEtat_param <= sta_MSB0; 
+            else
+                fsm_prochainEtat_param <= sta_init;
+            end if;   
                 ------------------------------------------  
             when sta_init =>
-            if(i_ech(23) = '1') then
-                    fsm_prochainEtat_param <= sta_init; 
-                else
-                    fsm_prochainEtat_param <= sta_check30;
-                end if;  
+            if(i_ech(23) = '0') then
+                fsm_prochainEtat_param <= sta_check30; 
+            else
+                fsm_prochainEtat_param <= sta_init;
+            end if;  
                 ------------------------------------------  
             when sta_check30 =>
             if(local_authorization = '0') then
@@ -128,7 +124,7 @@ sortie: process(fsm_EtatCourant_param)
     begin
         case fsm_EtatCourant_param is
             when sta_init =>
-                d_mef_reset <= '1';
+                d_mef_reset <= '0';
                 o_output <= '0';
                 o_cpt_bits_reset <= '0';
             when sta_check30 => 
