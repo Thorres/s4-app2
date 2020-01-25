@@ -58,7 +58,8 @@ PORT MAP(
     i_reset => d_reset,
     i_lrc => '0',
     i_en => '1',
-    i_ech => d_ech
+    i_ech => d_ech,
+    o_param => d_param
 );
 
 tb: process
@@ -107,7 +108,49 @@ begin
     wait for period; 
         d_bclk <= '0';
         d_ech <= "000000000000000000000001";
-        wait for period; 
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "100000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '1';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
+        d_bclk <= '0';
+        d_ech <= "000000000000000000000001";
+    wait for period; 
         d_bclk <= '1';
         d_ech <= "000000000000000000000001";
     wait for period; 

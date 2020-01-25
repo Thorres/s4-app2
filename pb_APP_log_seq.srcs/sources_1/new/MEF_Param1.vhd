@@ -85,33 +85,33 @@ begin
     end process;
 
 -- conditions de transitions
-transitions: process(i_lrc , fsm_EtatCourant_param, local_authorization)
+transitions: process(i_lrc, i_bclk , fsm_EtatCourant_param, local_authorization)
 begin
     if(i_lrc = '0') then                                -- a verifier
         case fsm_EtatCourant_param is
             when sta_output =>
-            if(i_ech(23) = '0') then
+            if i_ech(23) = '0' then
                 fsm_prochainEtat_param <= sta_MSB0; 
             else
                 fsm_prochainEtat_param <= sta_init;
             end if;
                 ------------------------------------------  
             when sta_MSB0 =>
-            if(i_ech(23) = '0') then
+            if i_ech(23) = '0' then
                 fsm_prochainEtat_param <= sta_MSB0; 
             else
                 fsm_prochainEtat_param <= sta_init;
             end if;   
                 ------------------------------------------  
             when sta_init =>
-            if(i_ech(23) = '0') then
+            if i_ech(23) = '0' then
                 fsm_prochainEtat_param <= sta_check30; 
             else
                 fsm_prochainEtat_param <= sta_init;
             end if;  
                 ------------------------------------------  
             when sta_check30 =>
-            if(local_authorization = '0') then
+            if local_authorization = '0' then
                 fsm_prochainEtat_param <= sta_check30;
             else
                 fsm_prochainEtat_param <= sta_output;
