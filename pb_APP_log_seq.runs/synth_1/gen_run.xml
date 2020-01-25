@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579885844">
   <File Type="PA-TCL" Name="circuit_tr_signal.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="circuit_tr_signal_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="circuit_tr_signal_reports.tcl"/>
   <File Type="RDS-RDS" Name="circuit_tr_signal.vds"/>
   <File Type="RDS-UTIL" Name="circuit_tr_signal_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="circuit_tr_signal_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="circuit_tr_signal.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="circuit_tr_signal_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="circuit_tr_signal_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/attenateur_pwm.vhd">

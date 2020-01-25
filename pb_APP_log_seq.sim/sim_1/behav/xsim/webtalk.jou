@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 24 12:07:33 2020
-# Process ID: 12080
-# Current directory: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/circuit_tr_signal_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sat Jan 25 15:09:02 2020
+# Process ID: 14120
+# Current directory: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/param1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/circuit_tr_signal_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/Simon -notrace
