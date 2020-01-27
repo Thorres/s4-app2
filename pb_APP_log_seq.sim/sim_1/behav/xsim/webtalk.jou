@@ -2,10 +2,10 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jan 26 20:00:13 2020
-# Process ID: 8520
+# Start of session at: Mon Jan 27 01:53:46 2020
+# Process ID: 10144
 # Current directory: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/calcul_param_3_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim/xsim.dir/simul_module_sig_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/Simon Torres/source/repos/s4-app2/pb_APP_log_seq.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------

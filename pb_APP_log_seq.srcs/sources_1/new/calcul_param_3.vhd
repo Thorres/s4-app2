@@ -74,7 +74,7 @@ end component;
 ---------------------------------------------------------------------------------
 -- Signaux
 ---------------------------------------------------------------------------------- 
-signal tableau, tab_fill: table_valeurs (47 downto 0) := (others => (others => '0'));
+signal tableau, tab_fill, tab_ou_fill: table_valeurs (47 downto 0) := (others => (others => '0'));
 signal compteur_compare, compteur_fill: std_logic_vector (7 downto 0) := "00000000";
 signal maximum: std_logic_vector (23 downto 0) := (others => '0');
 signal test_output: std_logic_vector (23 downto 0):= (others => '0');
@@ -92,7 +92,7 @@ port map(
     i_compteur => compteur_fill,
     i_table => tab_fill,
     o_cpt_reset => fill_cpt_reset,
-    o_table_modified => tab_fill,
+    o_table_modified => tab_ou_fill,
     o_compare_start => compare_authorized
 );
 
@@ -102,7 +102,7 @@ port map(
     i_en => compare_authorized,
     i_reset => i_reset,
     i_compteur => compteur_compare,
-    i_table => tab_fill,
+    i_table => tab_ou_fill,
     o_cpt_reset => compare_cpt_reset,
     o_biggest => maximum,
     o_output => output_authorized
