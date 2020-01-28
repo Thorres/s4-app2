@@ -125,18 +125,5 @@ port map(
       reset => fill_cpt_reset,
       o_val_cpt => compteur_fill
 );
-
-    process(output_authorized, i_bclk)
-    begin
-       if output_authorized = '1' and rising_edge(i_bclk) then
-        --process(i_bclk)
-       -- begin
-        --if rising_edge(i_bclk) then
-            o_param <= maximum(22 downto 15);
-       -- end if;
-      --  end process;
-            test_output <= maximum;
-        end if;
-    end process;
-
+o_param <= maximum(22 downto 15);
 end Behavioral;

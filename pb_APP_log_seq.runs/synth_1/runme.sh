@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1'
+HD_PWD='C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

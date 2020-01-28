@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 24 12:10:49 2020
-# Process ID: 9072
-# Current directory: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1
+# Start of session at: Tue Jan 28 13:06:07 2020
+# Process ID: 5072
+# Current directory: C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.runs/synth_1
 # Command line: vivado.exe -log circuit_tr_signal.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit_tr_signal.tcl
-# Log file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1/circuit_tr_signal.vds
-# Journal file: C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1\vivado.jou
+# Log file: C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.runs/synth_1/circuit_tr_signal.vds
+# Journal file: C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source circuit_tr_signal.tcl -notrace
 Command: synth_design -top circuit_tr_signal -part xc7z010clg400-1
@@ -16,19 +16,19 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 21340 
+INFO: Helper process launched with PID 5104 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 704.035 ; gain = 178.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 704.277 ; gain = 177.660
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'circuit_tr_signal' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'circuit_tr_signal' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:91]
 	Parameter mode_simulation bound to: 1'b0 
 	Parameter cst_CLK_syst_Hz bound to: 125000000 - type: integer 
-INFO: [Synth 8-3491] module 'synchro_codec_v1' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:43' bound to instance 'inst_synchro' of component 'synchro_codec_v1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:252]
-INFO: [Synth 8-638] synthesizing module 'synchro_codec_v1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:66]
+INFO: [Synth 8-3491] module 'synchro_codec_v1' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:43' bound to instance 'inst_synchro' of component 'synchro_codec_v1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'synchro_codec_v1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:66]
 	Parameter cst_CLK_syst_Hz bound to: 125000000 - type: integer 
 	Parameter const_CLK_syst_Hz bound to: 125000000 - type: integer 
-INFO: [Synth 8-3491] module 'synchro_zybo_v1' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:44' bound to instance 'inst_synchro' of component 'synchro_zybo_v1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:111]
-INFO: [Synth 8-638] synthesizing module 'synchro_zybo_v1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:57]
+INFO: [Synth 8-3491] module 'synchro_zybo_v1' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:44' bound to instance 'inst_synchro' of component 'synchro_zybo_v1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'synchro_zybo_v1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:57]
 	Parameter const_CLK_syst_Hz bound to: 125000000 - type: integer 
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT bound to: 56 - type: integer 
@@ -55,173 +55,185 @@ INFO: [Synth 8-638] synthesizing module 'synchro_zybo_v1' [C:/Users/Torres/Deskt
 	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
 	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-113] binding component instance 'PLLE2_BASE_inst' to cell 'PLLE2_BASE' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:138]
-INFO: [Synth 8-113] binding component instance 'ClockBuf0' to cell 'BUFG' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:190]
-INFO: [Synth 8-113] binding component instance 'ClockBufer1' to cell 'BUFG' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:197]
-INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_1000Hz' of component 'strb_gen' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:235]
-INFO: [Synth 8-638] synthesizing module 'strb_gen' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'strb_gen' (1#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:40]
-INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_1Hz' of component 'strb_gen' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:243]
-INFO: [Synth 8-256] done synthesizing module 'synchro_zybo_v1' (2#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:57]
-INFO: [Synth 8-3491] module 'gen_clk_codec' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:39' bound to instance 'inst_gen_clk_codec' of component 'gen_clk_codec' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:123]
-INFO: [Synth 8-638] synthesizing module 'gen_clk_codec' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:48]
-INFO: [Synth 8-113] binding component instance 'ClockBufer1' to cell 'BUFG' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:117]
-INFO: [Synth 8-256] done synthesizing module 'gen_clk_codec' (3#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'synchro_codec_v1' (4#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:66]
-INFO: [Synth 8-3491] module 'init_codec_v2' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:60' bound to instance 'inst_init_codec' of component 'init_codec_v2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:266]
-INFO: [Synth 8-638] synthesizing module 'init_codec_v2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:82]
+INFO: [Synth 8-113] binding component instance 'PLLE2_BASE_inst' to cell 'PLLE2_BASE' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:138]
+INFO: [Synth 8-113] binding component instance 'ClockBuf0' to cell 'BUFG' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:190]
+INFO: [Synth 8-113] binding component instance 'ClockBufer1' to cell 'BUFG' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:197]
+INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_1000Hz' of component 'strb_gen' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'strb_gen' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'strb_gen' (1#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:40]
+INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_1Hz' of component 'strb_gen' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'synchro_zybo_v1' (2#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd:57]
+INFO: [Synth 8-3491] module 'gen_clk_codec' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:39' bound to instance 'inst_gen_clk_codec' of component 'gen_clk_codec' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'gen_clk_codec' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:48]
+INFO: [Synth 8-113] binding component instance 'ClockBufer1' to cell 'BUFG' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'gen_clk_codec' (3#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'synchro_codec_v1' (4#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd:66]
+INFO: [Synth 8-3491] module 'init_codec_v2' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:60' bound to instance 'inst_init_codec' of component 'init_codec_v2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'init_codec_v2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:82]
 	Parameter c_clk_freq_Hz bound to: 50000000 - type: integer 
 	Parameter c_bus_i2c_bps bound to: 100000 - type: integer 
-INFO: [Synth 8-3491] module 'ctrl_i2c_V4_ssm2603' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:53' bound to instance 'inst_ctrl_i2c' of component 'ctrl_i2c_v4_ssm2603' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:218]
-INFO: [Synth 8-638] synthesizing module 'ctrl_i2c_V4_ssm2603' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:77]
+INFO: [Synth 8-3491] module 'ctrl_i2c_V4_ssm2603' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:53' bound to instance 'inst_ctrl_i2c' of component 'ctrl_i2c_v4_ssm2603' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'ctrl_i2c_V4_ssm2603' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:77]
 	Parameter c_clk_freq_Hz bound to: 50000000 - type: integer 
 	Parameter c_bus_i2c_bps bound to: 100000 - type: integer 
 	Parameter input_clk bound to: 50000000 - type: integer 
 	Parameter bus_clk bound to: 100000 - type: integer 
-INFO: [Synth 8-3491] module 'i2c_master' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:36' bound to instance 'inst_i2c_master' of component 'i2c_master' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:147]
-INFO: [Synth 8-638] synthesizing module 'i2c_master' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:54]
+INFO: [Synth 8-3491] module 'i2c_master' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:36' bound to instance 'inst_i2c_master' of component 'i2c_master' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'i2c_master' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:54]
 	Parameter input_clk bound to: 50000000 - type: integer 
 	Parameter bus_clk bound to: 100000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'i2c_master' (5#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:54]
-WARNING: [Synth 8-614] signal 'i_stb_read' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:167]
-WARNING: [Synth 8-614] signal 'i_stb_write' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:167]
-WARNING: [Synth 8-614] signal 'd_delai_synch' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:216]
-INFO: [Synth 8-256] done synthesizing module 'ctrl_i2c_V4_ssm2603' (6#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:77]
-WARNING: [Synth 8-614] signal 'd_strobe_1000Hz' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:241]
-WARNING: [Synth 8-614] signal 'd_cfg_busy' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:296]
-WARNING: [Synth 8-614] signal 'd_strobe_trame_I2C' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:296]
-INFO: [Synth 8-256] done synthesizing module 'init_codec_v2' (7#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'i2c_master' (5#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd:54]
+WARNING: [Synth 8-614] signal 'i_stb_read' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:167]
+WARNING: [Synth 8-614] signal 'i_stb_write' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:167]
+WARNING: [Synth 8-614] signal 'd_delai_synch' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:216]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_i2c_V4_ssm2603' (6#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd:77]
+WARNING: [Synth 8-614] signal 'd_strobe_1000Hz' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:241]
+WARNING: [Synth 8-614] signal 'd_cfg_busy' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:296]
+WARNING: [Synth 8-614] signal 'd_strobe_trame_I2C' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'init_codec_v2' (7#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd:82]
 	Parameter nbtn bound to: 4 - type: integer 
 	Parameter mode_seq_bouton bound to: 1'b0 
 	Parameter mode_simulation bound to: 1'b0 
-INFO: [Synth 8-3491] module 'module_commande' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:9' bound to instance 'inst_module_commande' of component 'module_commande' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:286]
-INFO: [Synth 8-638] synthesizing module 'module_commande' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:22]
+INFO: [Synth 8-3491] module 'module_commande' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:9' bound to instance 'inst_module_commande' of component 'module_commande' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'module_commande' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:22]
 	Parameter nbtn bound to: 4 - type: integer 
 	Parameter mode_seq_bouton bound to: 1'b0 
 	Parameter mode_simulation bound to: 1'b0 
 	Parameter nbtn bound to: 4 - type: integer 
 	Parameter mode_simul bound to: 1'b0 
-INFO: [Synth 8-3491] module 'conditionne_btn_v7' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:28' bound to instance 'inst_cond_btn' of component 'conditionne_btn_v7' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'conditionne_btn_v7' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:42]
+INFO: [Synth 8-3491] module 'conditionne_btn_v7' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:28' bound to instance 'inst_cond_btn' of component 'conditionne_btn_v7' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'conditionne_btn_v7' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:42]
 	Parameter nbtn bound to: 4 - type: integer 
 	Parameter mode_simul bound to: 1'b0 
-INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_bit' of component 'strb_gen' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'conditionne_btn_v7' (8#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:42]
-INFO: [Synth 8-3491] module 'MEF_btn' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:34' bound to instance 'inst_MEF_btn' of component 'MEF_btn' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'MEF_btn' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:41]
-WARNING: [Synth 8-614] signal 'i_str_btn' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'MEF_btn' (9#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'module_commande' (10#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:22]
+INFO: [Synth 8-3491] module 'strb_gen' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd:30' bound to instance 'inst_strb_bit' of component 'strb_gen' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'conditionne_btn_v7' (8#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd:42]
+INFO: [Synth 8-3491] module 'MEF_btn' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:34' bound to instance 'inst_MEF_btn' of component 'MEF_btn' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'MEF_btn' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:41]
+WARNING: [Synth 8-614] signal 'i_str_btn' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'MEF_btn' (9#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'module_commande' (10#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd:22]
 	Parameter const_CLK_Hz bound to: 50000000 - type: integer 
-INFO: [Synth 8-3491] module 'affhexPmodSSD_v3' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:49' bound to instance 'inst_afficheur' of component 'affhexPmodSSD_v3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'affhexPmodSSD_v3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:59]
+INFO: [Synth 8-3491] module 'affhexPmodSSD_v3' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:49' bound to instance 'inst_afficheur' of component 'affhexPmodSSD_v3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'affhexPmodSSD_v3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:59]
 	Parameter const_CLK_Hz bound to: 50000000 - type: integer 
-WARNING: [Synth 8-614] signal 'q_DA' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:102]
-WARNING: [Synth 8-614] signal 'i_aff_mem' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:111]
-WARNING: [Synth 8-614] signal 'q_aff_mem' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:111]
-INFO: [Synth 8-226] default block is never used [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:134]
-INFO: [Synth 8-256] done synthesizing module 'affhexPmodSSD_v3' (11#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:59]
-INFO: [Synth 8-3491] module 'module_sig' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:41' bound to instance 'inst_module_sig' of component 'module_sig' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:312]
-INFO: [Synth 8-638] synthesizing module 'module_sig' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:61]
-INFO: [Synth 8-3491] module 'sig_fct_1' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd:36' bound to instance 'inst_fct1' of component 'sig_fct_1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:206]
-INFO: [Synth 8-638] synthesizing module 'sig_fct_1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'sig_fct_1' (12#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd:45]
-INFO: [Synth 8-3491] module 'sig_fct_2' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:36' bound to instance 'inst_fct2' of component 'sig_fct_2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:212]
-INFO: [Synth 8-638] synthesizing module 'sig_fct_2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'sig_fct_2' (13#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:45]
-INFO: [Synth 8-3491] module 'sig_fct_3' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:36' bound to instance 'inst_fct3' of component 'sig_fct_3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:218]
-INFO: [Synth 8-638] synthesizing module 'sig_fct_3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'sig_fct_3' (14#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:45]
-INFO: [Synth 8-3491] module 'calcul_param_1' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:36' bound to instance 'inst_cal_param1' of component 'calcul_param_1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:225]
-INFO: [Synth 8-638] synthesizing module 'calcul_param_1' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'calcul_param_1' (15#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:49]
-INFO: [Synth 8-3491] module 'calcul_param_2' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:36' bound to instance 'inst_cal_param2' of component 'calcul_param_2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:235]
-INFO: [Synth 8-638] synthesizing module 'calcul_param_2' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'calcul_param_2' (16#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:49]
-INFO: [Synth 8-3491] module 'calcul_param_3' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:36' bound to instance 'inst_cal_param3' of component 'calcul_param_3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:246]
-INFO: [Synth 8-638] synthesizing module 'calcul_param_3' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:49]
-INFO: [Synth 8-256] done synthesizing module 'calcul_param_3' (17#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:49]
-INFO: [Synth 8-3491] module 'decodeur_i2s_v1b' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:36' bound to instance 'inst_decod_i2s' of component 'decodeur_i2s_v1b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:272]
-INFO: [Synth 8-638] synthesizing module 'decodeur_i2s_v1b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:48]
-INFO: [Synth 8-3491] module 'mef_decod_i2s_v1b' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:36' bound to instance 'inst_MEF_decod1b' of component 'mef_decod_i2s_v1b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:117]
-INFO: [Synth 8-638] synthesizing module 'mef_decod_i2s_v1b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'mef_decod_i2s_v1b' (18#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:52]
+WARNING: [Synth 8-614] signal 'q_DA' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:102]
+WARNING: [Synth 8-614] signal 'i_aff_mem' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:111]
+WARNING: [Synth 8-614] signal 'q_aff_mem' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:111]
+INFO: [Synth 8-226] default block is never used [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'affhexPmodSSD_v3' (11#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd:59]
+INFO: [Synth 8-3491] module 'module_sig' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:41' bound to instance 'inst_module_sig' of component 'module_sig' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:312]
+INFO: [Synth 8-638] synthesizing module 'module_sig' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:61]
+INFO: [Synth 8-3491] module 'sig_fct_1' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/imports/Downloads/sig_fct_1.vhd:36' bound to instance 'inst_fct1' of component 'sig_fct_1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'sig_fct_1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/imports/Downloads/sig_fct_1.vhd:45]
+WARNING: [Synth 8-614] signal 'd_output' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/imports/Downloads/sig_fct_1.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'sig_fct_1' (12#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/imports/Downloads/sig_fct_1.vhd:45]
+INFO: [Synth 8-3491] module 'sig_fct_2' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:36' bound to instance 'inst_fct2' of component 'sig_fct_2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'sig_fct_2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:45]
+WARNING: [Synth 8-614] signal 'd_ech_u24' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:171]
+WARNING: [Synth 8-614] signal 'vs' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:171]
+WARNING: [Synth 8-614] signal 'i_ech' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:171]
+INFO: [Synth 8-256] done synthesizing module 'sig_fct_2' (13#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd:45]
+INFO: [Synth 8-3491] module 'sig_fct_3' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:36' bound to instance 'inst_fct3' of component 'sig_fct_3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'sig_fct_3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'sig_fct_3' (14#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd:45]
+INFO: [Synth 8-3491] module 'calcul_param_1' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:36' bound to instance 'inst_cal_param1' of component 'calcul_param_1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:225]
+INFO: [Synth 8-638] synthesizing module 'calcul_param_1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:49]
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'inst_cpt' of component 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'compteur_nbits' (15#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
+INFO: [Synth 8-3491] module 'mefparam1' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:34' bound to instance 'inst_mefparam1' of component 'mefparam1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'mefparam1' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:45]
+INFO: [Synth 8-3491] module 'MEFCount3' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEFCount3.vhd:34' bound to instance 'inst_MEFCount3' of component 'MEFCount3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'MEFCount3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEFCount3.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MEFCount3' (16#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEFCount3.vhd:43]
+WARNING: [Synth 8-614] signal 'i_ech' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'mefparam1' (17#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:45]
+WARNING: [Synth 8-614] signal 'd_cpt_bits' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'calcul_param_1' (18#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:49]
+INFO: [Synth 8-3491] module 'calcul_param_2' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:36' bound to instance 'inst_cal_param2' of component 'calcul_param_2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'calcul_param_2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'calcul_param_2' (19#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd:49]
+INFO: [Synth 8-3491] module 'calcul_param_3' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:24' bound to instance 'inst_cal_param3' of component 'calcul_param_3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'calcul_param_3' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:36]
+INFO: [Synth 8-3491] module 'MEF_fill_table' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:7' bound to instance 'inst_MEF_fill_table' of component 'MEF_fill_table' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'MEF_fill_table' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:21]
+WARNING: [Synth 8-614] signal 'i_en' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:47]
+WARNING: [Synth 8-614] signal 'i_compteur' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:47]
+WARNING: [Synth 8-614] signal 'tableau' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:47]
+WARNING: [Synth 8-614] signal 'position' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:47]
+WARNING: [Synth 8-614] signal 'i_ech' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:47]
+WARNING: [Synth 8-614] signal 'tableau' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'MEF_fill_table' (20#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:21]
+INFO: [Synth 8-3491] module 'MEF_compare' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:28' bound to instance 'inst_MEF_compare' of component 'MEF_compare' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'MEF_compare' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:41]
+WARNING: [Synth 8-614] signal 'i_en' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:65]
+WARNING: [Synth 8-614] signal 'i_compteur' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:65]
+WARNING: [Synth 8-614] signal 'current_biggest' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:65]
+WARNING: [Synth 8-614] signal 'tableau' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:65]
+WARNING: [Synth 8-614] signal 'i_table' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:90]
+WARNING: [Synth 8-614] signal 'biggest' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'MEF_compare' (21#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd:41]
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'isnt_compteur_compare' of component 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:111]
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'isnt_compteur_fill' of component 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'calcul_param_3' (22#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd:36]
+INFO: [Synth 8-3491] module 'decodeur_i2s_v1b' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:36' bound to instance 'inst_decod_i2s' of component 'decodeur_i2s_v1b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'decodeur_i2s_v1b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:48]
+INFO: [Synth 8-3491] module 'mef_decod_i2s_v1b' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:36' bound to instance 'inst_MEF_decod1b' of component 'mef_decod_i2s_v1b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'mef_decod_i2s_v1b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'mef_decod_i2s_v1b' (23#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd:52]
 	Parameter nbits bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'inst_cpt_bits' of component 'compteur_nbits' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'compteur_nbits' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'inst_cpt_bits' of component 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'compteur_nbits__parameterized2' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
 	Parameter nbits bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'compteur_nbits' (19#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
-INFO: [Synth 8-3491] module 'reg_dec_24b' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:27' bound to instance 'reg_shift_I2S' of component 'reg_dec_24b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'reg_dec_24b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'reg_dec_24b' (20#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:39]
-INFO: [Synth 8-3491] module 'reg_24b' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:27' bound to instance 'reg_L' of component 'reg_24b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'reg_24b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:37]
-WARNING: [Synth 8-614] signal 'i_en' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'reg_24b' (21#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:37]
-INFO: [Synth 8-3491] module 'reg_24b' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:27' bound to instance 'reg_R' of component 'reg_24b' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:167]
-INFO: [Synth 8-256] done synthesizing module 'decodeur_i2s_v1b' (22#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:48]
-INFO: [Synth 8-3491] module 'codeur_i2s_vsb' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:34' bound to instance 'inst_cod_i2s' of component 'codeur_i2s_vsb' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:287]
-INFO: [Synth 8-638] synthesizing module 'codeur_i2s_vsb' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:46]
-INFO: [Synth 8-3491] module 'mef_cod_i2s_vsb' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:35' bound to instance 'inst_MEF_cod' of component 'mef_cod_i2s_vsb' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'mef_cod_i2s_vsb' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'mef_cod_i2s_vsb' (23#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'compteur_nbits__parameterized2' (23#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:34]
+INFO: [Synth 8-3491] module 'reg_dec_24b' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:27' bound to instance 'reg_shift_I2S' of component 'reg_dec_24b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'reg_dec_24b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'reg_dec_24b' (24#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd:39]
+INFO: [Synth 8-3491] module 'reg_24b' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:27' bound to instance 'reg_L' of component 'reg_24b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'reg_24b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:37]
+WARNING: [Synth 8-614] signal 'i_en' is read in the process but is not in the sensitivity list [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_24b' (25#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:37]
+INFO: [Synth 8-3491] module 'reg_24b' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd:27' bound to instance 'reg_R' of component 'reg_24b' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'decodeur_i2s_v1b' (26#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd:48]
+INFO: [Synth 8-3491] module 'codeur_i2s_vsb' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:34' bound to instance 'inst_cod_i2s' of component 'codeur_i2s_vsb' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'codeur_i2s_vsb' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:46]
+INFO: [Synth 8-3491] module 'mef_cod_i2s_vsb' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:35' bound to instance 'inst_MEF_cod' of component 'mef_cod_i2s_vsb' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'mef_cod_i2s_vsb' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'mef_cod_i2s_vsb' (27#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd:51]
 	Parameter nbits bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'inst_cpt_bits_cod' of component 'compteur_nbits' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:135]
-INFO: [Synth 8-3491] module 'reg_dec_24b_fd' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:27' bound to instance 'reg_shift_I2S' of component 'reg_dec_24b_fd' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'reg_dec_24b_fd' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'reg_dec_24b_fd' (24#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'codeur_i2s_vsb' (25#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'module_sig' (26#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:61]
+INFO: [Synth 8-3491] module 'compteur_nbits' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd:25' bound to instance 'inst_cpt_bits_cod' of component 'compteur_nbits' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:135]
+INFO: [Synth 8-3491] module 'reg_dec_24b_fd' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:27' bound to instance 'reg_shift_I2S' of component 'reg_dec_24b_fd' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'reg_dec_24b_fd' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'reg_dec_24b_fd' (28#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'codeur_i2s_vsb' (29#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'module_sig' (30#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd:61]
 	Parameter c_val_seuil bound to: 8'b00001111 
-INFO: [Synth 8-3491] module 'attenuateur_pwm' declared at 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:35' bound to instance 'inst_att' of component 'attenuateur_pwm' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:337]
-INFO: [Synth 8-638] synthesizing module 'attenuateur_pwm' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:44]
+INFO: [Synth 8-3491] module 'attenuateur_pwm' declared at 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:35' bound to instance 'inst_att' of component 'attenuateur_pwm' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:337]
+INFO: [Synth 8-638] synthesizing module 'attenuateur_pwm' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:44]
 	Parameter c_val_seuil bound to: 8'b00001111 
-INFO: [Synth 8-256] done synthesizing module 'attenuateur_pwm' (27#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'attenuateur_pwm' (31#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd:44]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'OBUF_o_pblrc' to cell 'OBUF' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:354]
+INFO: [Synth 8-113] binding component instance 'OBUF_o_pblrc' to cell 'OBUF' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:354]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'OBUF_o_reclrc' to cell 'OBUF' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:359]
+INFO: [Synth 8-113] binding component instance 'OBUF_o_reclrc' to cell 'OBUF' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:359]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-113] binding component instance 'OBUF_o_pbdat' to cell 'OBUF' [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:365]
-INFO: [Synth 8-256] done synthesizing module 'circuit_tr_signal' (28#1) [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:91]
+INFO: [Synth 8-113] binding component instance 'OBUF_o_pbdat' to cell 'OBUF' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:365]
+INFO: [Synth 8-256] done synthesizing module 'circuit_tr_signal' (32#1) [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd:91]
 WARNING: [Synth 8-3917] design circuit_tr_signal has port o_ac_muten driven by constant 1
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_bclk
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_reset
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_en
 WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_lrc
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[23]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[22]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[21]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[20]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[19]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[18]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[17]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[16]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[15]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[14]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[13]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[12]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[11]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[10]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[9]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[8]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[7]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[6]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[5]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[4]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[3]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[2]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[1]
-WARNING: [Synth 8-3331] design calcul_param_3 has unconnected port i_ech[0]
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_bclk
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_reset
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_en
@@ -250,34 +262,31 @@ WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_ech[3]
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_ech[2]
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_ech[1]
 WARNING: [Synth 8-3331] design calcul_param_2 has unconnected port i_ech[0]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_bclk
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_reset
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[22]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[21]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[20]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[19]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[18]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[17]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[16]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[15]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[14]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[13]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[12]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[11]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[10]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[9]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[8]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[7]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[6]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[5]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[4]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[3]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[2]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[1]
+WARNING: [Synth 8-3331] design MEFCount3 has unconnected port i_ech[0]
+WARNING: [Synth 8-3331] design mefparam1 has unconnected port i_bclk
 WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_en
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_lrc
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[23]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[22]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[21]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[20]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[19]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[18]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[17]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[16]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[15]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[14]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[13]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[12]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[11]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[10]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[9]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[8]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[7]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[6]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[5]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[4]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[3]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[2]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[1]
-WARNING: [Synth 8-3331] design calcul_param_1 has unconnected port i_ech[0]
 WARNING: [Synth 8-3331] design MEF_btn has unconnected port i_str_btn[3]
 WARNING: [Synth 8-3331] design MEF_btn has unconnected port i_str_btn[2]
 WARNING: [Synth 8-3331] design MEF_btn has unconnected port i_str_btn[1]
@@ -285,7 +294,7 @@ WARNING: [Synth 8-3331] design module_commande has unconnected port i_sw[1]
 WARNING: [Synth 8-3331] design module_commande has unconnected port i_sw[0]
 WARNING: [Synth 8-3331] design init_codec_v2 has unconnected port i_lrc
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 770.043 ; gain = 244.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 787.270 ; gain = 260.652
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -298,10 +307,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 770.043 ; gain = 244.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 787.270 ; gain = 260.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 770.043 ; gain = 244.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 787.270 ; gain = 260.652
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -309,40 +318,43 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
-Finished Parsing XDC File [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/circuit_tr_signal_propImpl.xdc].
+Parsing XDC File [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
+Finished Parsing XDC File [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/circuit_tr_signal_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/circuit_tr_signal_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 902.063 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 935.652 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 902.063 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 935.652 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 935.652 ; gain = 409.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 935.652 ; gain = 409.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 935.652 ; gain = 409.035
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master'
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_i2c_etat_courant_reg' in module 'ctrl_i2c_V4_ssm2603'
 INFO: [Synth 8-5546] ROM "cfg_ssm2603" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'MEF_btn'
-INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'mef_decod_i2s_v1b'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'MEFCount3'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_param_reg' in module 'mefparam1'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'MEF_fill_table'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'MEF_compare'
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_EtatCourant_reg' in module 'mef_cod_i2s_vsb'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -383,15 +395,137 @@ INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                sta_init |                          0000001 |                              000
-            sta_registre |                          0000010 |                              001
-           sta_load_left |                          0000100 |                              010
-           sta_wait_left |                          0001000 |                              100
-          sta_load_right |                          0010000 |                              011
-            sta_str_data |                          0100000 |                              110
-          sta_wait_right |                          1000000 |                              101
+                sta_init |                               00 |                               00
+                   sta_2 |                               01 |                               01
+                   sta_3 |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using encoding 'one-hot' in module 'mef_decod_i2s_v1b'
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using encoding 'sequential' in module 'MEFCount3'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_fsm_prochainEtat_param_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_fsm_prochainEtat_param_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:82]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                sta_init |                               00 |                               10
+             sta_check30 |                               01 |                               11
+              sta_output |                               10 |                               00
+                sta_msb0 |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_param_reg' using encoding 'sequential' in module 'mefparam1'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_fsm_prochainEtat_param_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'o_param_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd:100]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_fsm_prochainEtat_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_fsm_prochainEtat_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:41]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                sta_init |                              001 |                               00
+             sta_putnext |                              010 |                               01
+              sta_output |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using encoding 'one-hot' in module 'MEF_fill_table'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_fsm_prochainEtat_reg' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[46]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[45]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[44]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[43]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[42]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[41]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[40]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[39]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[38]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[37]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[36]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[35]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[34]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[33]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[32]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[31]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[30]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[29]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[28]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[27]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[26]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[25]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[24]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[23]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[22]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[21]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[20]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[19]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[18]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[17]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[16]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[15]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[14]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[13]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[12]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[11]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[10]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[9]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[8]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[7]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[6]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[5]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[4]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[3]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[2]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[1]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[0]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'tableau_reg[47]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[47]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[46]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[45]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[44]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[43]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[42]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[41]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[40]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[39]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[38]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[37]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[36]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[35]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[34]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[33]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[32]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[31]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[30]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[29]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[28]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[27]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[26]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[25]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[24]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[23]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[22]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[21]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[20]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[19]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[18]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[17]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[16]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[15]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[14]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[13]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[12]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[11]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[10]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[9]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[8]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[7]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[6]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[5]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[4]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'o_table_modified_reg[3]' [C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd:77]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                sta_init |                              001 |                               00
+             sta_compare |                              010 |                               01
+              sta_output |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using encoding 'one-hot' in module 'MEF_compare'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -409,59 +543,72 @@ INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'fsm_EtatCourant_reg' using encoding 'one-hot' in module 'mef_cod_i2s_vsb'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 935.652 ; gain = 409.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |MEF_fill_table__GB0    |           1|     28770|
+|2     |MEF_fill_table__GB1    |           1|     11119|
+|3     |MEF_fill_table__GB2    |           1|      9708|
+|4     |MEF_fill_table__GB3    |           1|     13702|
+|5     |calcul_param_3__GC0    |           1|      3620|
+|6     |module_sig__GC0        |           1|      1198|
+|7     |circuit_tr_signal__GC0 |           1|      1463|
++------+-----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     24 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 8     
 	   2 Input      7 Bit       Adders := 3     
 	   2 Input      4 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               24 Bit    Registers := 4     
 	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 9     
+	                8 Bit    Registers := 12    
 	                7 Bit    Registers := 3     
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 27    
+	                1 Bit    Registers := 28    
 +---Muxes : 
-	   2 Input     24 Bit        Muxes := 6     
+	   3 Input     24 Bit        Muxes := 48    
+	   2 Input     24 Bit        Muxes := 11    
 	   4 Input     24 Bit        Muxes := 1     
 	  33 Input     16 Bit        Muxes := 1     
 	  11 Input     11 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 5     
 	   2 Input      9 Bit        Muxes := 11    
 	   9 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
 	   6 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 13    
 	   8 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 1     
-	   7 Input      7 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 4     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 7     
-	   3 Input      1 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 3     
+	  48 Input      1 Bit        Muxes := 48    
+	   2 Input      1 Bit        Muxes := 22    
+	   3 Input      1 Bit        Muxes := 55    
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 2     
 	   9 Input      1 Bit        Muxes := 7     
 	   6 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 3     
-	  11 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -469,6 +616,126 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module MEF_fill_table 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 48    
+	   2 Input     24 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  48 Input      1 Bit        Muxes := 48    
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 51    
+Module MEF_compare 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module compteur_nbits__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module compteur_nbits__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module sig_fct_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module sig_fct_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 3     
+Module compteur_nbits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module MEFCount3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module mefparam1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module calcul_param_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module mef_decod_i2s_v1b 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+Module compteur_nbits__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module reg_dec_24b 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module reg_24b__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module reg_24b 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module mef_cod_i2s_vsb 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 2     
+Module compteur_nbits__parameterized2__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module reg_dec_24b_fd 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module codeur_i2s_vsb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+Module module_sig 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module strb_gen__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module strb_gen 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -536,6 +803,10 @@ Detailed RTL Component Info :
 	  33 Input     16 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module strb_gen__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module conditionne_btn_v7 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -553,48 +824,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-Module mef_decod_i2s_v1b 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   7 Input      7 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 4     
-Module compteur_nbits 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      7 Bit       Adders := 1     
-+---Registers : 
-	                7 Bit    Registers := 1     
-Module reg_dec_24b 
-Detailed RTL Component Info : 
-+---Registers : 
-	               24 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     24 Bit        Muxes := 2     
-Module reg_24b 
-Detailed RTL Component Info : 
-+---Registers : 
-	               24 Bit    Registers := 1     
-Module mef_cod_i2s_vsb 
-Detailed RTL Component Info : 
-+---Muxes : 
-	  11 Input     11 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 5     
-	  11 Input      1 Bit        Muxes := 2     
-Module reg_dec_24b_fd 
-Detailed RTL Component Info : 
-+---Registers : 
-	               24 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     24 Bit        Muxes := 2     
-Module codeur_i2s_vsb 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     24 Bit        Muxes := 2     
-Module module_sig 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   4 Input     24 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
 Module attenuateur_pwm 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -619,66 +848,196 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3917] design circuit_tr_signal has port o_ac_muten driven by constant 1
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[7] driven by constant 0
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[6] driven by constant 0
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[5] driven by constant 0
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[4] driven by constant 0
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[3] driven by constant 0
-WARNING: [Synth 8-3917] design circuit_tr_signal has port o_pmodled[2] driven by constant 0
-WARNING: [Synth 8-3331] design circuit_tr_signal has unconnected port i_sw[1]
-WARNING: [Synth 8-3331] design circuit_tr_signal has unconnected port i_sw[0]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_init_codec/inst_ctrl_i2c/d_read_req_reg )
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[6]' (FDE) to 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]'
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[7]' (FDE) to 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]'
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]' (FDE) to 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[3]'
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[2]' (FDE) to 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[3] )
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[4]' (FDE) to 'inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[5]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[5] )
-INFO: [Synth 8-3886] merging instance 'inst_module_commande/inst_cond_btn/q2_btn_reg[1]' (FD) to 'inst_afficheur/q_aff_mem_reg'
-INFO: [Synth 8-3886] merging instance 'inst_afficheur/q_DA_reg[4]' (FDCE) to 'inst_afficheur/q_DA_reg[7]'
-INFO: [Synth 8-3886] merging instance 'inst_afficheur/q_DA_reg[5]' (FDCE) to 'inst_afficheur/q_DA_reg[7]'
-INFO: [Synth 8-3886] merging instance 'inst_afficheur/q_DA_reg[6]' (FDCE) to 'inst_afficheur/q_DA_reg[7]'
-INFO: [Synth 8-3886] merging instance 'inst_afficheur/q_DA_reg[2]' (FDCE) to 'inst_afficheur/q_DA_reg[7]'
-INFO: [Synth 8-3886] merging instance 'inst_afficheur/q_DA_reg[7]' (FDCE) to 'inst_afficheur/q_DA_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_afficheur/q_DA_reg[3] )
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[1]' (FDCE) to 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[2]' (FDCE) to 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
-INFO: [Synth 8-3886] merging instance 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[3]' (FDCE) to 'inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4] )
-WARNING: [Synth 8-3332] Sequential element (inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\inst_init_codec/inst_ctrl_i2c/d_read_req_reg )
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[6]' (FDE) to 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[7]' (FDE) to 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[1]' (FDE) to 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[2]' (FDE) to 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[4]' (FDE) to 'i_0/inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\inst_init_codec/inst_ctrl_i2c/inst_i2c_master/addr_rw_reg[5] )
+INFO: [Synth 8-3886] merging instance 'i_0/inst_module_commande/inst_cond_btn/q2_btn_reg[1]' (FD) to 'i_0/inst_afficheur/q_aff_mem_reg'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[1]' (FDCE) to 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[2]' (FDCE) to 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[3]' (FDCE) to 'i_0/inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\inst_init_codec/inst_ctrl_i2c/FSM_onehot_fsm_i2c_etat_courant_reg[4] )
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch inst_module_sigi_6/\inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 935.652 ; gain = 409.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------------+---------------+----------------+
+|Module Name       | RTL Object       | Depth x Width | Implemented As | 
++------------------+------------------+---------------+----------------+
+|sig_fct_2         | tab[0]           | 128x22        | LUT            | 
+|circuit_tr_signal | inst_fct2/tab[0] | 128x22        | LUT            | 
++------------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |MEF_fill_table__GB0    |           1|      8749|
+|2     |MEF_fill_table__GB1    |           1|      2511|
+|3     |MEF_fill_table__GB2    |           1|      2269|
+|4     |MEF_fill_table__GB3    |           1|      3843|
+|5     |calcul_param_3__GC0    |           1|      2388|
+|6     |module_sig__GC0        |           1|       643|
+|7     |circuit_tr_signal__GC0 |           1|       828|
++------+-----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 935.652 ; gain = 409.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 960.313 ; gain = 433.695
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |MEF_fill_table__GB0    |           1|      8749|
+|2     |MEF_fill_table__GB1    |           1|      2511|
+|3     |MEF_fill_table__GB2    |           1|      2269|
+|4     |MEF_fill_table__GB3    |           1|      3843|
+|5     |calcul_param_3__GC0    |           1|      2388|
+|6     |module_sig__GC0        |           1|       643|
+|7     |circuit_tr_signal__GC0 |           1|       834|
++------+-----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[35][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[34][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[33][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[32][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[31][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[30][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[29][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[28][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[45][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[44][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[43][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[42][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[41][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[40][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[39][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[38][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[37][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[36][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[0][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[1][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[2][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[3][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[4][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[5][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[6][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[7][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[8][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[9][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[10][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[11][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[12][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[13][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[14][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[15][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[16][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[17][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[18][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[19][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[20][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[21][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[22][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[23][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[24][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[25][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[26][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[27][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[46][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[47][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[47][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[46][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[45][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[44][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[43][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[42][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[41][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[40][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[39][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[38][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[37][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[36][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[35][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[34][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[33][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[32][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[31][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[30][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[29][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[28][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[27][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[26][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[25][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[24][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[23][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[22][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[21][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[20][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[19][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[18][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[17][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[16][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[15][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[14][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[13][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[12][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[11][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[10][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[9][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[8][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[7][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[6][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[5][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[4][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[3][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[2][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[1][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-3332] Sequential element (inst_module_sig/inst_cal_param3/inst_MEF_fill_table/o_table_modified_reg[0][23]) is unused and will be removed from module circuit_tr_signal.
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \inst_module_sig/inst_cal_param1/inst_mefparam1/FSM_sequential_fsm_prochainEtat_param_reg[1]  is always disabled
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 902.063 ; gain = 376.180
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:27 . Memory (MB): peak = 980.266 ; gain = 453.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -702,7 +1061,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished IO Insertion : Time (s): cpu = 00:01:27 ; elapsed = 00:01:31 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -715,7 +1074,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:27 ; elapsed = 00:01:32 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -727,25 +1086,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -761,78 +1120,93 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    18|
-|3     |LUT1       |    14|
-|4     |LUT2       |    32|
-|5     |LUT3       |    25|
-|6     |LUT4       |    56|
-|7     |LUT5       |    58|
-|8     |LUT6       |    72|
-|9     |PLLE2_BASE |     1|
-|10    |FDCE       |   185|
-|11    |FDPE       |     9|
-|12    |FDRE       |   117|
-|13    |IBUF       |     7|
-|14    |IOBUF      |     1|
-|15    |OBUF       |    28|
-|16    |OBUFT      |     1|
+|1     |BUFG       |     5|
+|2     |CARRY4     |    32|
+|3     |LUT1       |    44|
+|4     |LUT2       |   117|
+|5     |LUT3       |   204|
+|6     |LUT4       |   147|
+|7     |LUT5       |   873|
+|8     |LUT6       |  3427|
+|9     |MUXF7      |   156|
+|10    |MUXF8      |    69|
+|11    |PLLE2_BASE |     1|
+|12    |FDCE       |   256|
+|13    |FDPE       |    10|
+|14    |FDRE       |   120|
+|15    |LD         |  3364|
+|16    |IBUF       |     7|
+|17    |IOBUF      |     1|
+|18    |OBUF       |    28|
+|19    |OBUFT      |     1|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+------------------------+--------------------+------+
-|      |Instance                |Module              |Cells |
-+------+------------------------+--------------------+------+
-|1     |top                     |                    |   627|
-|2     |  inst_afficheur        |affhexPmodSSD_v3    |    36|
-|3     |  inst_att              |attenuateur_pwm     |    21|
-|4     |  inst_init_codec       |init_codec_v2       |   212|
-|5     |    inst_ctrl_i2c       |ctrl_i2c_V4_ssm2603 |   166|
-|6     |      inst_i2c_master   |i2c_master          |   133|
-|7     |  inst_module_commande  |module_commande     |    38|
-|8     |    inst_MEF_btn        |MEF_btn             |     5|
-|9     |    inst_cond_btn       |conditionne_btn_v7  |    33|
-|10    |      inst_strb_bit     |strb_gen_2          |     1|
-|11    |  inst_module_sig       |module_sig          |   187|
-|12    |    inst_cod_i2s        |codeur_i2s_vsb      |    85|
-|13    |      inst_MEF_cod      |mef_cod_i2s_vsb     |    45|
-|14    |      inst_cpt_bits_cod |compteur_nbits_1    |    16|
-|15    |      reg_shift_I2S     |reg_dec_24b_fd      |    24|
-|16    |    inst_decod_i2s      |decodeur_i2s_v1b    |   102|
-|17    |      inst_MEF_decod1b  |mef_decod_i2s_v1b   |    10|
-|18    |      inst_cpt_bits     |compteur_nbits      |    19|
-|19    |      reg_L             |reg_24b             |    24|
-|20    |      reg_R             |reg_24b_0           |    25|
-|21    |      reg_shift_I2S     |reg_dec_24b         |    24|
-|22    |  inst_synchro          |synchro_codec_v1    |    96|
-|23    |    inst_gen_clk_codec  |gen_clk_codec       |    27|
-|24    |    inst_synchro        |synchro_zybo_v1     |    69|
-|25    |      inst_strb_1000Hz  |strb_gen            |     3|
-+------+------------------------+--------------------+------+
++------+----------------------------+---------------------------------+------+
+|      |Instance                    |Module                           |Cells |
++------+----------------------------+---------------------------------+------+
+|1     |top                         |                                 |  8862|
+|2     |  inst_afficheur            |affhexPmodSSD_v3                 |    47|
+|3     |  inst_att                  |attenuateur_pwm                  |    21|
+|4     |  inst_init_codec           |init_codec_v2                    |   212|
+|5     |    inst_ctrl_i2c           |ctrl_i2c_V4_ssm2603              |   166|
+|6     |      inst_i2c_master       |i2c_master                       |   133|
+|7     |  inst_module_commande      |module_commande                  |    38|
+|8     |    inst_MEF_btn            |MEF_btn                          |     4|
+|9     |    inst_cond_btn           |conditionne_btn_v7               |    34|
+|10    |      inst_strb_bit         |strb_gen_4                       |     1|
+|11    |  inst_module_sig           |module_sig                       |  8408|
+|12    |    inst_cal_param1         |calcul_param_1                   |    37|
+|13    |      inst_cpt              |compteur_nbits_3                 |    17|
+|14    |      inst_mefparam1        |mefparam1                        |    12|
+|15    |        inst_MEFCount3      |MEFCount3                        |     6|
+|16    |    inst_cal_param3         |calcul_param_3                   |  8022|
+|17    |      inst_MEF_compare      |MEF_compare                      |  1682|
+|18    |      inst_MEF_fill_table   |MEF_fill_table                   |  5658|
+|19    |      isnt_compteur_compare |compteur_nbits                   |    28|
+|20    |      isnt_compteur_fill    |compteur_nbits_2                 |   654|
+|21    |    inst_cod_i2s            |codeur_i2s_vsb                   |    86|
+|22    |      inst_MEF_cod          |mef_cod_i2s_vsb                  |    45|
+|23    |      inst_cpt_bits_cod     |compteur_nbits__parameterized2_1 |    16|
+|24    |      reg_shift_I2S         |reg_dec_24b_fd                   |    25|
+|25    |    inst_decod_i2s          |decodeur_i2s_v1b                 |   232|
+|26    |      inst_MEF_decod1b      |mef_decod_i2s_v1b                |     2|
+|27    |      inst_cpt_bits         |compteur_nbits__parameterized2   |    22|
+|28    |      reg_L                 |reg_24b                          |    25|
+|29    |      reg_R                 |reg_24b_0                        |   159|
+|30    |      reg_shift_I2S         |reg_dec_24b                      |    24|
+|31    |    inst_fct2               |sig_fct_2                        |    23|
+|32    |  inst_synchro              |synchro_codec_v1                 |    97|
+|33    |    inst_gen_clk_codec      |gen_clk_codec                    |    28|
+|34    |    inst_synchro            |synchro_zybo_v1                  |    69|
+|35    |      inst_strb_1000Hz      |strb_gen                         |     3|
++------+----------------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 984.973 ; gain = 458.355
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 905.113 ; gain = 247.211
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 905.113 ; gain = 379.230
+Synthesis finished with 0 errors, 0 critical warnings and 271 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:29 . Memory (MB): peak = 984.973 ; gain = 309.973
+Synthesis Optimization Complete : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 984.973 ; gain = 458.355
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3623 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 920.953 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 997.121 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
+  A total of 3366 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LD => LDCE: 3363 instances
+  LD => LDCE (inverted pins: G): 1 instances
   PLLE2_BASE => PLLE2_ADV: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-140 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+158 Infos, 307 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 920.953 ; gain = 633.426
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 920.953 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 997.121 ; gain = 705.953
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 997.121 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.runs/synth_1/circuit_tr_signal.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.runs/synth_1/circuit_tr_signal.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file circuit_tr_signal_utilization_synth.rpt -pb circuit_tr_signal_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 12:12:02 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 28 13:08:00 2020...

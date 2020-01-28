@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579885844">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1580234763">
+  <File Type="BITSTR-BMM" Name="circuit_tr_signal_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="circuit_tr_signal_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="circuit_tr_signal_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="circuit_tr_signal_power_routed.rpt"/>
   <File Type="PA-TCL" Name="circuit_tr_signal.tcl"/>
-  <File Type="BITSTR-BMM" Name="circuit_tr_signal_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="circuit_tr_signal_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="circuit_tr_signal_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="circuit_tr_signal_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="circuit_tr_signal_reports.tcl"/>
-  <File Type="OPT-DCP" Name="circuit_tr_signal_opt.dcp"/>
+  <File Type="OPT-DRC" Name="circuit_tr_signal_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="circuit_tr_signal.hwdef"/>
-  <File Type="BG-BGN" Name="circuit_tr_signal.bgn"/>
   <File Type="PWROPT-DCP" Name="circuit_tr_signal_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="circuit_tr_signal_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="circuit_tr_signal_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="circuit_tr_signal_placed.dcp"/>
+  <File Type="PLACE-IO" Name="circuit_tr_signal_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="circuit_tr_signal_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="circuit_tr_signal_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="circuit_tr_signal_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="circuit_tr_signal_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="circuit_tr_signal_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="circuit_tr_signal_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="circuit_tr_signal.bgn"/>
+  <File Type="PLACE-TIMING" Name="circuit_tr_signal_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="circuit_tr_signal_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="circuit_tr_signal.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="circuit_tr_signal_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="circuit_tr_signal_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="circuit_tr_signal_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="circuit_tr_signal.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="circuit_tr_signal_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="circuit_tr_signal_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="circuit_tr_signal_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="circuit_tr_signal_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="circuit_tr_signal_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="circuit_tr_signal_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="circuit_tr_signal.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="circuit_tr_signal_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="circuit_tr_signal.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_tr_signal_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_tr_signal_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-SYSDEF" Name="circuit_tr_signal.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_tr_signal_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="circuit_tr_signal_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="circuit_tr_signal_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="circuit_tr_signal_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="circuit_tr_signal_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="circuit_tr_signal_timing_summary_routed.pb"/>
-  <File Type="RDI-RDI" Name="circuit_tr_signal.vdi"/>
+  <File Type="ROUTE-TIMING-RPX" Name="circuit_tr_signal_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="circuit_tr_signal_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="circuit_tr_signal_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="circuit_tr_signal_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_tr_signal_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_tr_signal_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_tr_signal_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="circuit_tr_signal_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="circuit_tr_signal_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="circuit_tr_signal_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="circuit_tr_signal_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="circuit_tr_signal_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="circuit_tr_signal_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="circuit_tr_signal.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="circuit_tr_signal_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="circuit_tr_signal.rbt"/>
   <File Type="BITSTR-NKY" Name="circuit_tr_signal.nky"/>
   <File Type="BG-DRC" Name="circuit_tr_signal.drc"/>
+  <File Type="RDI-RDI" Name="circuit_tr_signal.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="circuit_tr_signal_drc_opted.rpt"/>
-  <File Type="PLACE-UTIL" Name="circuit_tr_signal_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="circuit_tr_signal_utilization_placed.pb"/>
-  <File Type="PLACE-IO" Name="circuit_tr_signal_io_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="circuit_tr_signal_control_sets_placed.rpt"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="circuit_tr_signal_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="circuit_tr_signal_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="circuit_tr_signal_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="circuit_tr_signal_route_status.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="circuit_tr_signal_power_routed.rpx"/>
-  <File Type="ROUTE-DRC" Name="circuit_tr_signal_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="circuit_tr_signal_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_tr_signal_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="circuit_tr_signal_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_tr_signal_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_tr_signal_bus_skew_routed.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/attenateur_pwm.vhd">
@@ -128,14 +147,6 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd"/>
         <Attr Name="ImportTime" Val="1549202913"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/sig_fct_1.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../Documents/projetsFPGA/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd"/>
-        <Attr Name="ImportTime" Val="1549206874"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -271,6 +282,44 @@
     <File Path="$PPRDIR/archive_project_summary.txt"/>
     <File Path="$PSRCDIR/sources_1/new/MEF_btn.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEFCount3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEF_Param1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/facteur_oubli.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEF_compare.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEF_fill_table.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/sig_fct_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Downloads/sig_fct_1.vhd"/>
+        <Attr Name="ImportTime" Val="1580106091"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

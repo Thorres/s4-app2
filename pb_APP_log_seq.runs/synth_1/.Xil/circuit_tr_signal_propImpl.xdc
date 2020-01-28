@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc rfile:../../../pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc rfile:../../../pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K17   IOSTANDARD LVCMOS33 } [get_ports { sysclk }]; #IO_L12P_T1_MRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]

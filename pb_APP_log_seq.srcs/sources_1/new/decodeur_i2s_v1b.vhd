@@ -166,7 +166,7 @@ port  map
     -- registre de sortie Droite
         reg_R:  reg_24b 
         Port map ( 
-          i_clk        => i_bclk,
+          i_clk       => i_bclk,
           i_reset     => i_reset,
           i_en        => d_load_right,
           i_dat       => q_shift_reg,

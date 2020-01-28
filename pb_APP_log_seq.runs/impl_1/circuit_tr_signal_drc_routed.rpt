@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 24 12:13:42 2020
+| Date         : Tue Jan 28 13:10:17 2020
 | Host         : DESKTOP-A4LOHE0 running 64-bit major release  (build 9200)
 | Command      : report_drc -file circuit_tr_signal_drc_routed.rpt -pb circuit_tr_signal_drc_routed.pb -rpx circuit_tr_signal_drc_routed.rpx
 | Design       : circuit_tr_signal
@@ -24,16 +24,272 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
-+--------+----------+---------------------------------+------------+
-| Rule   | Severity | Description                     | Violations |
-+--------+----------+---------------------------------+------------+
-| RPBF-3 | Warning  | IO port buffering is incomplete | 1          |
-| ZPS7-1 | Warning  | PS7 block required              | 1          |
-+--------+----------+---------------------------------+------------+
+             Violations found: 53
++----------+----------+---------------------------------+------------+
+| Rule     | Severity | Description                     | Violations |
++----------+----------+---------------------------------+------------+
+| PDRC-153 | Warning  | Gated clock check               | 51         |
+| RPBF-3   | Warning  | IO port buffering is incomplete | 1          |
+| ZPS7-1   | Warning  | PS7 block required              | 1          |
++----------+----------+---------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/inst_MEF_compare/o_biggest_reg[22]_i_1_n_1 is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/inst_MEF_compare/o_biggest_reg[22]_i_1/O, cell inst_module_sig/inst_cal_param3/inst_MEF_compare/o_biggest_reg[22]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/inst_MEF_fill_table/fsm_prochainEtat is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/inst_MEF_fill_table/FSM_onehot_fsm_prochainEtat_reg[2]_i_2/O, cell inst_module_sig/inst_cal_param3/inst_MEF_fill_table/FSM_onehot_fsm_prochainEtat_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[3][22]_i_2_n_1 is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[3][22]_i_2/O, cell inst_module_sig/inst_cal_param3/inst_MEF_fill_table/tableau_reg[3][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_compare/E[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_compare/current_biggest_reg[22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_compare/current_biggest_reg[22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/E[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[35][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[35][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0][0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[47][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[47][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_0[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[46][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[46][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_10[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[36][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[36][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_11[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[34][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[34][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_12[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[33][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[33][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_13[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[32][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[32][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_14[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[31][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[31][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_15[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[30][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[30][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_16[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[29][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[29][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_17[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[28][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[28][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_18[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[27][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[27][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_19[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[26][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[26][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_1[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[45][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[45][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_20[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[25][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[25][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_21[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[24][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[24][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_22[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[23][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[23][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_23[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[22][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[22][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_24[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[21][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[21][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_25[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[20][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[20][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_26[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[19][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[19][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_27[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[18][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[18][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_28[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[17][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[17][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_29[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[16][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[16][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_2[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[44][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[44][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_30[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[15][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[15][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_31[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[14][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[14][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_32[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[13][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[13][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_33[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[12][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[12][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_34[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[11][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[11][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_35[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[10][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[10][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_36[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[9][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[9][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_37[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[8][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[8][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_38[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[7][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[7][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_39[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[6][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[6][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_3[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[43][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[43][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_40[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[5][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[5][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_41[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[4][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[4][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_42[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[2][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[2][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_43[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[1][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[1][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_44[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[0][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[0][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_4[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[42][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[42][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_5[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[41][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[41][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_6[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[40][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[40][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_7[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[39][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[39][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_8[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[38][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[38][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net inst_module_sig/inst_cal_param3/isnt_compteur_fill/FSM_onehot_fsm_EtatCourant_reg[0]_9[0] is a gated clock net sourced by a combinational pin inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[37][22]_i_2/O, cell inst_module_sig/inst_cal_param3/isnt_compteur_fill/tableau_reg[37][22]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
 RPBF-3#1 Warning
 IO port buffering is incomplete  
 Device port io_ac_sda expects both input and output buffering but the buffers are incomplete.

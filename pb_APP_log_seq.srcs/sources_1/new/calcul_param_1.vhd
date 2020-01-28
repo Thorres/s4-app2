@@ -96,7 +96,7 @@ begin
      );
     process(d_output, i_bclk)
     begin
-    if d_output = '1' then
+    if d_output = '1' and i_bclk = '1' then
         o_param <= d_cpt_bits + 1;    -- temporaire ...
     end if;
     end process;

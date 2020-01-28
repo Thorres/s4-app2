@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Fri Jan 24 12:13:45 2020
+| Date             : Tue Jan 28 13:10:28 2020
 | Host             : DESKTOP-A4LOHE0 running 64-bit major release  (build 9200)
 | Command          : report_power -file circuit_tr_signal_power_routed.rpt -pb circuit_tr_signal_power_summary_routed.pb -rpx circuit_tr_signal_power_routed.rpx
 | Design           : circuit_tr_signal
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.232        |
+| Total On-Chip Power (W)  | 0.273        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.138        |
-| Device Static (W)        | 0.094        |
+| Dynamic (W)              | 0.178        |
+| Device Static (W)        | 0.095        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.3         |
-| Junction Temperature (C) | 27.7         |
+| Max Ambient (C)          | 81.9         |
+| Junction Temperature (C) | 28.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,17 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      611 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      195 |     17600 |            1.11 |
-|   Register     |    <0.001 |      311 |     35200 |            0.88 |
-|   CARRY4       |    <0.001 |       18 |      4400 |            0.41 |
-|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       28 |       --- |             --- |
-| Signals        |    <0.001 |      446 |       --- |             --- |
+| Slice Logic    |     0.019 |     8821 |       --- |             --- |
+|   LUT as Logic |     0.019 |     4573 |     17600 |           25.98 |
+|   Register     |    <0.001 |     3728 |     35200 |           10.59 |
+|   CARRY4       |    <0.001 |       32 |      4400 |            0.73 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   F7/F8 Muxes  |    <0.001 |      225 |     17600 |            1.28 |
+|   Others       |     0.000 |       41 |       --- |             --- |
+| Signals        |     0.023 |     7832 |       --- |             --- |
 | PLL            |     0.128 |        1 |         2 |           50.00 |
-| I/O            |     0.008 |       37 |       100 |           37.00 |
-| Static Power   |     0.094 |          |           |                 |
-| Total          |     0.232 |          |           |                 |
+| I/O            |     0.007 |       37 |       100 |           37.00 |
+| Static Power   |     0.095 |          |           |                 |
+| Total          |     0.273 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.014 |      0.004 |
+| Vccint    |       1.000 |     0.059 |       0.055 |      0.004 |
 | Vccaux    |       1.800 |     0.070 |       0.065 |      0.006 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,12 +150,18 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| circuit_tr_signal |     0.138 |
-|   inst_synchro    |     0.129 |
-|     inst_synchro  |     0.128 |
-+-------------------+-----------+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| circuit_tr_signal           |     0.178 |
+|   inst_module_sig           |     0.042 |
+|     inst_cal_param3         |     0.041 |
+|       inst_MEF_compare      |     0.001 |
+|       inst_MEF_fill_table   |     0.014 |
+|       isnt_compteur_compare |     0.002 |
+|       isnt_compteur_fill    |     0.025 |
+|   inst_synchro              |     0.129 |
+|     inst_synchro            |     0.128 |
++-----------------------------+-----------+
 
 

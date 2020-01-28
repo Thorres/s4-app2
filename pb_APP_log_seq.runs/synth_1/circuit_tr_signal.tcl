@@ -18,47 +18,53 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.cache/wt [current_project]
-set_property parent.project_path C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.cache/wt [current_project]
+set_property parent.project_path C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_1.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd
-  C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/attenateur_pwm.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_1.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_2.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/calcul_param_3.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/circuit_tr_signal.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/ctrl_i2c_V4_codec_ssm2603.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/gen_clk_codec.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/i2c_master.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/init_codec_v2.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_sig.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_2.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/sig_fct_3.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/strb_gen_v3.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_codec_v1.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/affhex_pmodssd_v3.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/conditionne_btn_v7.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/module_commande.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/codeur_i2s_vsb.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/decodeur_i2s_v1b.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_decod_i2s_v1b.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b_fd.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_dec_24b.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/mef_cod_i2s_vsb.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/compteur_nbits.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/reg_24b.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/synchro_zybo_v1.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_btn.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEFCount3.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_Param1.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/facteur_oubli.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_compare.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/new/MEF_fill_table.vhd
+  C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/sources_1/imports/Downloads/sig_fct_1.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -68,8 +74,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc
-set_property used_in_implementation false [get_files C:/Users/Torres/Desktop/pb_APP_log_seq/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
+read_xdc C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc
+set_property used_in_implementation false [get_files C:/Users/Torres/Desktop/APP2/Valid/s4-app2/pb_APP_log_seq.srcs/constrs_1/new/circuit_tr_signal.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

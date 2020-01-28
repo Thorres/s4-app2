@@ -47,6 +47,7 @@ architecture Behavioral of MEF_compare is
    signal fsm_EtatCourant, fsm_prochainEtat : fsm_cI2S_etats;
    signal tableau: table_valeurs (47 downto 0) := (others => (others => '0'));
    signal current_biggest: std_logic_vector (23 downto 0);
+   signal biggest: std_logic_vector (23 downto 0) := (others => '0');
 begin
    -- Assignation du prochain état
     process(i_clk, i_reset)
@@ -81,6 +82,7 @@ begin
             end if;
             
             when sta_output =>
+                biggest <= current_biggest;
                 fsm_prochainEtat <= sta_init;
             end case;
     end process;
@@ -90,18 +92,17 @@ begin
         case fsm_EtatCourant is
             when sta_init =>
                 tableau <= i_table;
-                o_biggest <= tableau (0);
                 o_output <= '0';
                 o_cpt_reset <= '1';
                 
             when sta_compare =>
                 o_output <= '0';
                 o_cpt_reset <= '0';
-                
+                o_biggest <= biggest; 
             when sta_output =>
                 o_output <= '1';
                 o_cpt_reset <= '0';
-                o_biggest <= current_biggest;
+                o_biggest <= biggest;
         end case;
     end process;
 -- tableau <= i_table;
