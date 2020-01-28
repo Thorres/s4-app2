@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579885844">
   <File Type="BITSTR-BMM" Name="circuit_tr_signal_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="circuit_tr_signal_power_routed.rpt"/>
   <File Type="PA-TCL" Name="circuit_tr_signal.tcl"/>
   <File Type="OPT-DCP" Name="circuit_tr_signal_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="circuit_tr_signal_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="circuit_tr_signal_reports.tcl"/>
   <File Type="OPT-HWDEF" Name="circuit_tr_signal.hwdef"/>
   <File Type="PWROPT-DCP" Name="circuit_tr_signal_pwropt.dcp"/>
@@ -16,10 +18,14 @@
   <File Type="ROUTE-ERROR-DCP" Name="circuit_tr_signal_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="circuit_tr_signal_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="circuit_tr_signal_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="circuit_tr_signal_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="circuit_tr_signal.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_tr_signal_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="circuit_tr_signal.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_tr_signal_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="circuit_tr_signal.sysdef"/>
   <File Type="ROUTE-TIMING-PB" Name="circuit_tr_signal_timing_summary_routed.pb"/>
+  <File Type="ROUTE-CLK" Name="circuit_tr_signal_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="circuit_tr_signal.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_tr_signal_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="circuit_tr_signal_postroute_physopt_bb.dcp"/>
@@ -28,6 +34,22 @@
   <File Type="BITSTR-NKY" Name="circuit_tr_signal.nky"/>
   <File Type="BG-DRC" Name="circuit_tr_signal.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="circuit_tr_signal_drc_opted.rpt"/>
+  <File Type="PLACE-UTIL" Name="circuit_tr_signal_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="circuit_tr_signal_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="circuit_tr_signal_io_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="circuit_tr_signal_control_sets_placed.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="circuit_tr_signal_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="circuit_tr_signal_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="circuit_tr_signal_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="circuit_tr_signal_route_status.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="circuit_tr_signal_power_routed.rpx"/>
+  <File Type="ROUTE-DRC" Name="circuit_tr_signal_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="circuit_tr_signal_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_tr_signal_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="circuit_tr_signal_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_tr_signal_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_tr_signal_bus_skew_routed.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/attenateur_pwm.vhd">

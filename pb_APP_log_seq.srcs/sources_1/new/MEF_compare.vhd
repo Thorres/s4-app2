@@ -72,7 +72,7 @@ begin
             end if;
             when sta_compare =>
             if i_compteur < "00110000" then  --
-                if current_biggest < tableau(to_integer(unsigned(i_compteur))) then
+                if current_biggest(22 downto 0) < tableau (to_integer(unsigned(i_compteur)))(22 downto 0) then
                     current_biggest <= tableau (to_integer(unsigned(i_compteur)));
                 end if;
                 fsm_prochainEtat <= sta_compare;

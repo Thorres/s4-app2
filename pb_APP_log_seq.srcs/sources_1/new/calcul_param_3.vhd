@@ -74,7 +74,7 @@ end component;
 ---------------------------------------------------------------------------------
 -- Signaux
 ---------------------------------------------------------------------------------- 
-signal tableau, tab_fill, tab_ou_fill: table_valeurs (47 downto 0) := (others => (others => '0'));
+signal tab_ou_fill: table_valeurs (47 downto 0) := (others => (others => '0'));
 signal compteur_compare, compteur_fill: std_logic_vector (7 downto 0) := "00000000";
 signal maximum: std_logic_vector (23 downto 0) := (others => '0');
 signal test_output: std_logic_vector (23 downto 0):= (others => '0');
@@ -90,7 +90,7 @@ port map(
     i_ech => i_ech,
     i_en => i_en,
     i_compteur => compteur_fill,
-    i_table => tab_fill,
+    i_table => tab_ou_fill,
     o_cpt_reset => fill_cpt_reset,
     o_table_modified => tab_ou_fill,
     o_compare_start => compare_authorized
@@ -126,11 +126,17 @@ port map(
       o_val_cpt => compteur_fill
 );
 
-    process(output_authorized)
+    process(output_authorized, i_bclk)
     begin
-        if output_authorized = '1' then
+       if output_authorized = '1' and rising_edge(i_bclk) then
+        --process(i_bclk)
+       -- begin
+        --if rising_edge(i_bclk) then
+            o_param <= maximum(22 downto 15);
+       -- end if;
+      --  end process;
             test_output <= maximum;
         end if;
     end process;
-    o_param <= x"03";    -- temporaire ...
+
 end Behavioral;

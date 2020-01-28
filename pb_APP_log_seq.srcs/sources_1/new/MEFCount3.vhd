@@ -62,7 +62,7 @@ begin
        end if;
     end process;
     
-    transition: process(i_ech, fsm_EtatCourant)
+    transition: process(i_ech, fsm_EtatCourant, i_bclk)
     begin
         case fsm_EtatCourant is
             when sta_init =>

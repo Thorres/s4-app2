@@ -79,7 +79,7 @@ begin
     generic map (nbits => 8)
     port  map
      (
-          clk        => i_bclk,
+          clk        => i_lrc,
           i_en        => '1',     -- compteur toujours actif
           reset       => d_cpt_bits_reset,
           o_val_cpt   => d_cpt_bits
@@ -94,12 +94,10 @@ begin
         o_output => d_output,
         o_cpt_bits_reset => d_cpt_bits_reset
      );
-    process(d_output)
+    process(d_output, i_bclk)
     begin
     if d_output = '1' then
-        o_param <= d_cpt_bits;    -- temporaire ...
-    else 
-        o_param <= "00000000";
+        o_param <= d_cpt_bits + 1;    -- temporaire ...
     end if;
     end process;
 

@@ -66,26 +66,26 @@ end component;
 begin
     inst_MEFCount3: MEFCount3
         port map(
-            i_bclk => i_bclk,
+            i_bclk => i_lrc,
             i_reset => d_mef_reset,
             i_ech => i_ech,
             o_authorize => local_authorization
         );
 
    -- Assignation du prochain état
-    process(i_bclk, i_reset)
+    process(i_lrc, i_reset)
     begin
        if (i_reset ='1') then
              fsm_EtatCourant_param <= sta_init;
        else
-       if rising_edge(i_bclk) then
+       if rising_edge(i_lrc) then
              fsm_EtatCourant_param <= fsm_prochainEtat_param;
        end if;
        end if;
     end process;
 
 -- conditions de transitions
-transitions: process(i_lrc, i_bclk , fsm_EtatCourant_param, local_authorization)
+transitions: process(i_lrc , fsm_EtatCourant_param, local_authorization)
 begin
     if(i_lrc = '0') then                                -- a verifier
         case fsm_EtatCourant_param is

@@ -46,128 +46,59 @@ component calcul_param_1 is
     );
 end component;
 signal d_ech: std_logic_vector (23 downto 0);
-signal d_reset, d_bclk: std_logic;
+signal d_reset, d_bclk, d_lrc: std_logic;
 signal d_param: std_logic_vector (7 downto 0);
+signal d_ac_lrc, d_ac_bclk: std_logic;
 
-constant period: time := 50ns;
+constant period: time := 20.8us;
+constant periods3: time := 62.4 us;
+constant c_lrc_Period       : time :=  20.8 us;  -- 48 KHz
+constant c_bclk_Period       : time := 325.49 ns;  -- 3 MHz
+
 begin
 
 inst_calcul_param_1: calcul_param_1
 PORT MAP(
     i_bclk => d_bclk,
     i_reset => d_reset,
-    i_lrc => '0',
+    i_lrc => d_lrc,
     i_en => '1',
     i_ech => d_ech,
     o_param => d_param
 );
+  sim_lrc:  process
+  begin
+     d_ac_lrc <= '1';  -- init
+     loop
+        wait for c_lrc_Period / 2;
+        d_ac_lrc <= not d_ac_lrc; 
+     end loop;
+  end process;
+d_lrc <= d_ac_lrc;
+
+  sim_bclk:  process
+  begin
+     d_ac_bclk <= '1';  -- init
+     loop
+        wait for c_bclk_Period / 2;
+        d_ac_bclk <= not d_ac_bclk; 
+     end loop;
+  end process;
+d_bclk <= d_ac_bclk;
 
 tb: process
 begin
         d_reset <= '1';
-        d_bclk <= '1';
         d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_reset <= '1';
-        d_bclk <= '0';
+    wait for 10ns;
+        d_reset <= '0';
         d_ech <= "100000000000000000000001";
     wait for period;
-        d_reset <= '0';
-        d_bclk <= '1';
+        d_ech <= "000000000000000000000001";
+    wait for periods3;
         d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "100000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '1';
-        d_ech <= "000000000000000000000001";
-    wait for period; 
-        d_bclk <= '0';
-        d_ech <= "000000000000000000000001";
+    wait for periods3;
+            d_ech <= "000000000000000000000001";
     wait;
 end process;
 

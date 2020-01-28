@@ -57,7 +57,6 @@ begin
             when sta_putNext =>
             if i_compteur < "00101111" then  --
                tableau (47 - position) <= tableau (46 - position);
-                --tableau (47) <= tableau (47 -2);
                 fsm_prochainEtat <= sta_putNext;
             elsif i_compteur = "00101111" then
                 tableau (0) <= i_ech;
