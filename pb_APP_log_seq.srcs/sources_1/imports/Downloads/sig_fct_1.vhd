@@ -47,16 +47,22 @@ architecture Behavioral of sig_fct_1 is
 ---------------------------------------------------------------------------------
 -- Signaux
 ----------------------------------------------------------------------------------
-    signal d_ech             : std_logic_vector (23 downto 0);   -- 
-    signal d_ech_fct         : std_logic_vector (23 downto 0);   --   
-    signal d_ech_u24         : unsigned (23 downto 0);      --  
-    
+    signal d_ech             : std_logic_vector (22 downto 0) := (others => '0');   -- 
+    signal d_output          : std_logic_vector (23 downto 0) := (others => '0');
 ---------------------------------------------------------------------------------------------
 --    Description comportementale
 ---------------------------------------------------------------------------------------------
 begin 
     -- simple transfert...
-    d_ech_u24   <=  unsigned (i_ech);
-    o_ech_fct   <=  std_logic_vector( d_ech_u24);    
-                 
+    d_ech   <=  i_ech(22 downto 0);
+                
+    process(d_ech, i_ech) is
+    begin
+        if(d_ech < "01000000000000000000000") then
+            d_output <= i_ech;
+        else
+            d_output <= i_ech(23) & "01000000000000000000000"; 
+        end if;
+        o_ech_fct <= d_output;
+    end process;    
 end Behavioral;

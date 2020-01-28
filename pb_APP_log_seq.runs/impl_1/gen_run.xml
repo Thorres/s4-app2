@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1579885844">
-  <File Type="BITSTR-BMM" Name="circuit_tr_signal_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="circuit_tr_signal_power_routed.rpt"/>
   <File Type="PA-TCL" Name="circuit_tr_signal.tcl"/>
-  <File Type="OPT-DCP" Name="circuit_tr_signal_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="circuit_tr_signal_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="circuit_tr_signal_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="circuit_tr_signal_reports.tcl"/>
+  <File Type="OPT-DCP" Name="circuit_tr_signal_opt.dcp"/>
   <File Type="OPT-HWDEF" Name="circuit_tr_signal.hwdef"/>
-  <File Type="PWROPT-DCP" Name="circuit_tr_signal_pwropt.dcp"/>
   <File Type="BG-BGN" Name="circuit_tr_signal.bgn"/>
+  <File Type="PWROPT-DCP" Name="circuit_tr_signal_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="circuit_tr_signal_placed.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="circuit_tr_signal_incremental_reuse_pre_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="circuit_tr_signal_postplace_pwropt.dcp"/>
@@ -18,15 +18,15 @@
   <File Type="ROUTE-ERROR-DCP" Name="circuit_tr_signal_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="circuit_tr_signal_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="circuit_tr_signal_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC-RPX" Name="circuit_tr_signal_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="circuit_tr_signal.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_tr_signal_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="circuit_tr_signal_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="circuit_tr_signal.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_tr_signal_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_tr_signal_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="circuit_tr_signal.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_tr_signal_methodology_drc_routed.pb"/>
   <File Type="ROUTE-TIMING-PB" Name="circuit_tr_signal_timing_summary_routed.pb"/>
-  <File Type="ROUTE-CLK" Name="circuit_tr_signal_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="circuit_tr_signal.vdi"/>
+  <File Type="ROUTE-CLK" Name="circuit_tr_signal_clock_utilization_routed.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_tr_signal_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="circuit_tr_signal_postroute_physopt_bb.dcp"/>
   <File Type="BG-BIT" Name="circuit_tr_signal.bit"/>
